@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="options.css">
+        <style>
+            #keyWords{
+                border-right-color: white;
+            }
+            body{
+                height: auto;
+            }
+            #comment{
+                font-size: 1.5vw;
+            }
+            #save{
+                text-align: center;
+            }
+            #saveButton{
+                border-radius: 1vw;
+                height: 3vw;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div id="logo"><img src="/images/logoGray.png" alt="logo"></div>
+                <button id="options" class="menu"><a href="/options.html">Options</a></button>
+                <br>
+                <button id="keyWords" class="menu"><a href="/key.html">Key Words</a></button>
+                <br>
+                <button id="about" class="menu"><a href="/about.html">About Us</a></button>
+            </header>
+            <section id="content">
+                <div>
+                    <h1>Allergen Alert</h1>
+                </div>
+                <div>
+                    <h2>Key Words</h2>
+                    <p>Below are the allergens with there associated key words. 
+                        Each list can be edited and doing so will effect the warnings. 
+                        Only lowercase single words separate by a comma are acceptable. No 
+                        spaces are permitted.</p>
+                    <label for="soyWords">Soy</label>
+                    <textarea name="soyWords" id="soyWords" cols="30" rows="5"></textarea>
+                    <label for="wheatWords">Wheat</label>
+                    <textarea name="wheatWords" id="wheatWords" cols="30" rows="5"></textarea>
+                    <label for="milkWords">Milk</label>
+                    <textarea name="milkWords" id="milkWords" cols="30" rows="5"></textarea>
+                    <label for="eggWords">Eggs</label>
+                    <textarea name="eggWords" id="eggWords" cols="30" rows="5"></textarea>
+                    <label for="fishWords">Fish</label>
+                    <textarea name="fishWords" id="fishWords" cols="30" rows="5"></textarea>
+                    <label for="shellfishWords">Shellfish</label>
+                    <textarea name="shellfishWords" id="shellfishWords" cols="30" rows="5"></textarea>
+                    <label for="treenutWords">Treenuts</label>
+                    <textarea name="treenutWords" id="treenutWords" cols="30" rows="5"></textarea>
+                    <label for="peanutWords">Peanuts</label>
+                    <textarea name="peanutWords" id="peanutWords" cols="30" rows="5"></textarea>
+                    <label for="soyWords">Other</label>
+                    <textarea name="otherWords" id="otherWords" cols="30" rows="5" aria-valuetext="hello"></textarea>
+                    <p id="comment">*Any key words added to other will automatically be used without activation from the Options tab.</p>
+                </div>
+                <div id="save"><button id="saveButton">Save Settings</button></div>
+            </section>
+            <footer></footer>
+        </main>
+        <script src="key.js"></script>
+    </body>
+</html>

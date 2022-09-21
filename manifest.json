@@ -1,0 +1,32 @@
+{
+    "name": "Allergy Alert",
+    "description": "Create a allergen alert for products",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting", "webNavigation", "*://*/*"],
+    "content_scripts": [
+        {
+            "matches":["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/logo16new.png",
+            "32": "/images/logo32new.png",
+            "48": "/images/logo48new.png",
+            "128": "/images/logo128new.png"
+        }
+    },
+    "icons": {
+        "16": "/images/logo16new.png",
+        "32": "/images/logo32new.png",
+        "48": "/images/logo48new.png",
+        "128": "/images/logo128new.png"
+    },
+    "options_page": "options.html"
+}
